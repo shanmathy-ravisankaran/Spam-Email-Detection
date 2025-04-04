@@ -34,3 +34,24 @@ A production-grade machine learning system designed to robustly classify emails 
 └── logs/                   # System runtime logs
 ```
 
+## ⚡ Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone <repository_url>
+   cd Spam-Email-Detection
+   ```
+
+2. **Set up Environment**
+   It is recommended to use a virtual environment.
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
