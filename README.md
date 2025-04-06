@@ -54,4 +54,27 @@ A production-grade machine learning system designed to robustly classify emails 
    pip install -r requirements.txt
    ```
 
+## 🖥️ Usage
+
+### 1. Running the Web Application
+Launch the interactive dashboard to classify emails instantly.
+
+```bash
+streamlit run app.py
+```
+
+- **Single Email Tab**: Paste email content to get an immediate Spam/Ham prediction with a confidence score.
+- **Batch Processing Tab**: Upload an `.mbox` file to process multiple emails at once and download the results as a CSV.
+
+### 2. Training the Model
+(Optional) If you wish to retrain the models on new data:
+
+1. Place your dataset in `data/dataset/dataset.csv`.
+2. Run the training pipeline:
+   ```bash
+   python -m src.pipeline.training_pipeline
+   ```
+3. Artifacts (Model & Vectorizer) will be saved in the `outputs/` directory.
+4. **Important**: Update `src/config/config.py` with the new paths to your generated model and vectorizer if they change.
+
 
