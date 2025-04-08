@@ -77,4 +77,15 @@ streamlit run app.py
 3. Artifacts (Model & Vectorizer) will be saved in the `outputs/` directory.
 4. **Important**: Update `src/config/config.py` with the new paths to your generated model and vectorizer if they change.
 
+## ⚙️ Configuration
+
+The system is highly configurable via `src/config/config.py`. You can adjust:
+- Model hyperparameters (Grid Search configuration)
+- Input/Output paths
+- Training parameters (Cross-validation folds, etc.)
+
+## 📊 Model Performance
+
+The pipeline automatically evaluates models using 5-fold cross-validation. Metrics including Accuracy, Precision, Recall, and F1-Score are logged for each experiment. By default, the system selects the best performing model (often SVM or Random Forest) for inference.
+
 
